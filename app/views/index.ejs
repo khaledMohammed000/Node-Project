@@ -1,0 +1,20 @@
+<html>
+
+<head></head>
+
+<body>
+    <h1>Welcome to the node application.</h1>
+    <%= this.partial({url: 'views/header.ejs'}) %>
+        <ul>
+            <% for(var i=0; i<data.length; i++) {%>
+                <li>
+                    <%= data[i].name %>
+                        <%= data[i].age %>
+                            <%= "xxx-xxx-"+data[i].SSN.substring(6,10) %>
+                </li>
+                <% } %>
+        </ul>
+        <script src="js/app.js"></script>
+</body>
+
+</html>

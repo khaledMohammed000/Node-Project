@@ -1,0 +1,87 @@
+<!--<html>
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>-->
+<div>
+    <form class="form-horizontal" method="post" action="/register">
+        <div class="form-group">
+            <label for="inputEmail" class="control-label col-xs-2">First Name</label>
+
+            <div class="col-xs-4">
+                <input type="text" class="form-control" placeholder="First Name" name="firstName" ng-model="userDetails.firstName">
+
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail" class="control-label col-xs-2">Last Name</label>
+            <div class="col-xs-4">
+                <input type="text" class="form-control" name="lastName" placeholder="Last Name" ng-model="userDetails.lastName">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail" class="control-label col-xs-2">User Name</label>
+            <div class="col-xs-4">
+                <input type="text" name="userName" class="form-control" placeholder="User Name" ng-model="userDetails.userName">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail" class="control-label col-xs-2">Password</label>
+            <div class="col-xs-4">
+                <input type="text" name="password" class="form-control" placeholder="User Name" ng-model="userDetails.userName">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail" class="control-label col-xs-2">Date Of Birth</label>
+            <div class="col-xs-4">
+                <input type="text" class="form-control" placeholder="Date Of Birth" ng-model="userDetails.DoB">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputEmail" class="control-label col-xs-2">Country</label>
+            <div class="col-xs-4">
+                <select class="form-control">
+                    <option value="">Please Select</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputEmail" class="control-label col-xs-2">Phone Number</label>
+            <div class="col-xs-4">
+                <input type="text" class="form-control" name="phoneNumber" placeholder="Phone Number" ng-model="userDetails.phoneNumber">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword" class="control-label col-xs-2">Gender</label>
+            <div class="col-xs-4">
+                <input type="radio" value="M" ng-model="userDetails.gender" name="gender">M
+                <input type="radio" value="F" name="gender" ng-model="userDetails.gender">F
+                <input type="radio" value="NA" name="gender" ng-model="userDetails.gender">Don't Reveal
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-4">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="userDetails.terms"> I Agree Terms</label>
+                </div>
+            </div>
+        </div>
+        <div class=" form-group ">
+            <div class="col-xs-offset-2 col-xs-4 ">
+                <button type="submit" class="btn btn-primary" ng-disabled="!userDetails.terms" ng-click="registerUser()">Register</button>
+            </div>
+        </div>
+    </form>
+
+</div>
+<!--
+</body>
+
+</html>-->

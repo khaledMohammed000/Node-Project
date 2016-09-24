@@ -1,0 +1,20 @@
+{
+  "name": "inventoryApp",
+  "homepage": "https://github.com/kiranuidev/NODEJS-8AM-August",
+  "authors": [
+    "kiran paturi <kpaturi@smarttuition.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
